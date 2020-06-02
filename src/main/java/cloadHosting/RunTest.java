@@ -30,16 +30,16 @@ public class RunTest {
 		if(title.equals("myHost - Cloud Hosting"))
 			System.out.println(title);
 		
-//		driver.getScreenshotAs(OutputType.FILE);
-//		try {
-//			FileUtils.copyFile(driver.getScreenshotAs(OutputType.FILE), new File("./snaps/1.png"));
-//		} catch (WebDriverException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+		driver.getScreenshotAs(OutputType.FILE);
+		try {
+		FileUtils.copyFile(driver.getScreenshotAs(OutputType.FILE), new File("./snaps/1.png"));
+		} catch (WebDriverException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		driver.close();
 	}
 	
